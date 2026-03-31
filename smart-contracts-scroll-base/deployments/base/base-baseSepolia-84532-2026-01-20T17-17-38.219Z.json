@@ -1,0 +1,41 @@
+{
+  "deployer": "0x7893ef20c5e96dA90A975EeD6F5B8c6F033F8795",
+  "timestamp": "2026-01-20T17:17:19.890Z",
+  "network": "baseSepolia",
+  "chainId": "84532",
+  "isBase": true,
+  "isBaseMainnet": false,
+  "isBaseSepolia": true,
+  "explorerUrl": "https://sepolia.basescan.org",
+  "deployment": {
+    "method": "hardhat_accounts",
+    "keystoreFile": null,
+    "accountType": "hardhat_default"
+  },
+  "tokens": {
+    "MochaBeanToken": "0xB39AaB9c56115483CEC62c248caAF3261792fdA9",
+    "MochaLandToken": "0x31eD83c36bDAA3AC2E463786B498844501f96EfE",
+    "MochaTreeToken": "0x1338E023691FB1b45EadABf4254ebd57A1A3253b"
+  },
+  "diamond": {},
+  "facets": {},
+  "utilities": {
+    "ERC6551AccountImplementation": "0x2C757DBc6dE99D87c33F4A65f83878F4d03c0499",
+    "ERC6551Registry": "0x5E46Ae94F0eb9Ff7CE9C95dE934E6273f195B102"
+  },
+  "ico": {},
+  "baseConfig": {
+    "priceFeeds": {
+      "ETH_USD": "0x4aDC67696bA383F8DDd44C5B9f1B3c6d1911d250",
+      "BTC_USD": "0x6ce185860a4963106506C203335A2910413708e9",
+      "USDC_USD": "0x1692B66432F7c4C60b0F6c0C4C0F5F5F5F5F5F5F5F5",
+      "USDT_USD": "0x1692B66432F7c4C60b0F6c0C4C0F5F5F5F5F5F5F5F5"
+    },
+    "tokens": {
+      "USDC": "0x036CbD53842c5426634e7929541eC2318f3dCF7e",
+      "WETH": "0x4200000000000000000000000000000000000006",
+      "USDT": "0x0000000000000000000000000000000000000000",
+      "WBTC": "0x0000000000000000000000000000000000000000"
+    }
+  }
+}
