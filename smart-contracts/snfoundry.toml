@@ -1,0 +1,9 @@
+[sncast.mainnet]
+network = "mainnet"
+accounts-file = "~/.starknet_accounts/starknet_open_zeppelin_accounts.json"
+account = "braavos-deployer"
+
+[sncast.sepolia]
+network = "sepolia"
+accounts-file = "~/.starknet_accounts/starknet_open_zeppelin_accounts.json"
+account = "braavos-deployer"

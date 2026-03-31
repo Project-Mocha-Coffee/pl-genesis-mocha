@@ -1,0 +1,10 @@
+# Dependencies
+node_modules/
+
+# Scarb / Cairo
+target/
+
+# Secrets — never commit
+.env
+.env.local
+*.pem

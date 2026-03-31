@@ -1,0 +1,13 @@
+{
+  "name": "project-mocha-starknet",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "scarb build",
+    "deploy:ico": "node scripts/deploy-ico.mjs"
+  },
+  "devDependencies": {
+    "starknet": "^7.0.0"
+  }
+}

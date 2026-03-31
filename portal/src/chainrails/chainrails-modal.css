@@ -1,0 +1,75 @@
+/* Chainrails payment modal styles – in-app copy to avoid build CSS extension issues */
+/* Above dashboard tours, dialogs, and sticky sidebars (Framer transform contexts) */
+.payment-modal-wrapper {
+  position: fixed;
+  inset: 0;
+  z-index: 2147483000;
+  height: 100dvh;
+  width: 100vw;
+  transition: all 0.1s ease-in-out;
+}
+.payment-modal-wrapper.loading {
+  background-color: rgba(0, 0, 0, 0.2);
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+}
+.payment-modal-wrapper.not-loading {
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+}
+.payment-modal-wrapper.open {
+  visibility: visible;
+}
+.payment-modal-wrapper.closed {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+.payment-modal-wrapper.closed * {
+  pointer-events: none !important;
+}
+.payment-modal-wrapper.open iframe {
+  transform: translateY(0) scale(1);
+}
+.payment-modal-wrapper.closed iframe {
+  transform: translateY(50vh) scale(1);
+}
+.payment-modal-loader {
+  position: absolute;
+  inset: 0;
+  z-index: 2147483000;
+  display: grid;
+  height: 100%;
+  width: 100%;
+  place-content: center;
+}
+.payment-modal-loader .icon {
+  height: 48px;
+  width: 48px;
+  animation: cr-spin 1s linear infinite;
+  fill: #2563eb;
+  color: #475569;
+}
+.payment-modal {
+  position: absolute;
+  inset: 0;
+  z-index: 2147483000;
+  height: 100%;
+  width: 100%;
+  transition: opacity 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.payment-modal.visible {
+  opacity: 1;
+}
+.payment-modal.invisible {
+  opacity: 0;
+}
+@keyframes cr-spin {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
